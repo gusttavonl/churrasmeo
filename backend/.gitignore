@@ -1,0 +1,12 @@
+node_modules
+dist
+data
+!src/data
+!tests/unitary/data
+coverage
+globalConfig.json
+yarn-error.log
+.vscode
+
+
+*.DS_Store
