@@ -12,6 +12,8 @@ export class DbAddParticipants implements AddParticipants {
   ) {}
 
   async add (participantsData: AddParticipantsParams): Promise<ParticipantsModel> {
+    const participants = await this.addParticipantsRepository.add(participantsData)
+
     const barbacue = await this.findBarbecueByIdRepository.findById(participantsData.barbecue.id)
 
     const sumValueParticipantToBarbecueValueTotal = barbacue.value + participantsData.value
@@ -20,7 +22,6 @@ export class DbAddParticipants implements AddParticipants {
 
     await this.updateBarbecueRepository.update(barbacue.id, barbacueUpdateObject)
 
-    const participants = await this.addParticipantsRepository.add(participantsData)
     return participants
   }
 }
