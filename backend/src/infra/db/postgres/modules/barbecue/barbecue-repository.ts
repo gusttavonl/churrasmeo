@@ -64,7 +64,6 @@ export class BarbecueRepository implements AddBarbecueRepository, FindAllBarbecu
         'barbecue.date'
       ])
       .leftJoinAndSelect('barbecue.account', 'account')
-      .leftJoinAndSelect('barbecue.participants', 'participants')
       .where('barbecue.id = :id', { id: id })
       .getOne()
 
