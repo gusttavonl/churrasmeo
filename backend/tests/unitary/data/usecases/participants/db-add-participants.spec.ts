@@ -27,8 +27,8 @@ const makeParams = (): AddParticipantsParams => ({
   barbecue: { id: 'any_id' },
   name: 'any_name',
   value: 1,
-  value_suggestions_with_drink: 1,
-  value_suggestions_with_out_drink: 1
+  value_suggestion_with_drink: 1,
+  value_suggestion_with_out_drink: 1
 })
 
 describe('DbAddParticipants', () => {
@@ -43,8 +43,8 @@ describe('DbAddParticipants', () => {
       barbecue: { id: 'any_id' },
       name: 'any_name',
       value: 1,
-      value_suggestions_with_drink: 1,
-      value_suggestions_with_out_drink: 1
+      value_suggestion_with_drink: 1,
+      value_suggestion_with_out_drink: 1
     })
   })
 

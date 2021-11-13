@@ -30,10 +30,11 @@ const makeSut = (): SutTypes => {
 
 const makeParams = (): HttpRequest => ({
   body: {
-    account: 'any_id',
-    description: 'any_description',
-    information: 'any_information',
-    date: new Date()
+    barbecue: { id: 'any_id' },
+    name: 'any_name',
+    value: 1,
+    value_suggestion_with_drink: 1,
+    value_suggestion_with_out_drink: 1
   },
   params: {
     id: 'any_id'
@@ -48,10 +49,11 @@ describe('AddParticipantsController', () => {
     const addSpy = jest.spyOn(addParticipantsStub, 'add')
     await sut.handle(makeParams())
     expect(addSpy).toHaveBeenCalledWith({
-      account: 'any_id',
-      description: 'any_description',
-      information: 'any_information',
-      date: new Date()
+      barbecue: { id: 'any_id' },
+      name: 'any_name',
+      value: 1,
+      value_suggestion_with_drink: 1,
+      value_suggestion_with_out_drink: 1
     })
   })
 

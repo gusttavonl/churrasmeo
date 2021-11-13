@@ -6,14 +6,14 @@ export const makeParticipantsModel = (): ParticipantsModel => ({
   barbecue: { id: 'any_barbecue' },
   name: 'any_name',
   value: 1,
-  value_suggestions_with_drink: 1,
-  value_suggestions_with_out_drink: 1
+  value_suggestion_with_drink: 1,
+  value_suggestion_with_out_drink: 1
 })
 
 export const makeParticipantsParams = (): AddParticipantsParams => ({
   barbecue: { id: 'any_barbecue' },
   name: 'any_name',
   value: 1,
-  value_suggestions_with_drink: 1,
-  value_suggestions_with_out_drink: 1
+  value_suggestion_with_drink: 1,
+  value_suggestion_with_out_drink: 1
 })
