@@ -31,7 +31,8 @@ export class createTableBarbecue1636415954230 implements MigrationInterface {
           },
           {
             name: 'value',
-            type: 'numeric(5,2)'
+            type: 'numeric(5,2)',
+            isNullable: true
           },
           {
             name: 'date',
