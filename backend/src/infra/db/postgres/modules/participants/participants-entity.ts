@@ -26,10 +26,10 @@ export class ParticipantsEntity implements ParticipantsModel {
   value: number
 
   @Column()
-  value_suggestions_with_drink: number
+  value_suggestion_with_drink: number
 
   @Column()
-  value_suggestions_with_out_drink: number
+  value_suggestion_with_out_drink: number
 
   @Column()
   date: Date

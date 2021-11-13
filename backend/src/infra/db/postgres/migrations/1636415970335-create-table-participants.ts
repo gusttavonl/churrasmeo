@@ -33,7 +33,7 @@ export class createTableParticipants1636415970335 implements MigrationInterface 
             type: 'numeric(5,2)'
           },
           {
-            name: 'value_suggestion_without_drink',
+            name: 'value_suggestion_with_out_drink',
             type: 'numeric(5,2)'
           },
           {

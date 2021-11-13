@@ -15,8 +15,8 @@ export class AddParticipantsController implements Controller {
         barbecue,
         name,
         value,
-        value_suggestions_with_drink: valueSuggestionsWithDrink,
-        value_suggestions_with_out_drink: valueSuggestionsWithOutDrink
+        value_suggestion_with_drink: valueSuggestionWithDrink,
+        value_suggestion_with_out_drink: valueSuggestionWithOutDrink
       } = httpRequest.body
 
       const error = this.validation.validate(httpRequest.body)
@@ -28,8 +28,8 @@ export class AddParticipantsController implements Controller {
         barbecue,
         name,
         value,
-        value_suggestions_with_drink: valueSuggestionsWithDrink,
-        value_suggestions_with_out_drink: valueSuggestionsWithOutDrink
+        value_suggestion_with_drink: valueSuggestionWithDrink,
+        value_suggestion_with_out_drink: valueSuggestionWithOutDrink
       })
 
       return ok(participants)

@@ -32,8 +32,8 @@ export class ParticipantsRepository implements AddParticipantsRepository, FindAl
         'participants.id',
         'participants.name',
         'participants.value',
-        'participants.value_suggestions_with_drink',
-        'participants.value_suggestions_with_out_drink',
+        'participants.value_suggestion_with_drink',
+        'participants.value_suggestion_with_out_drink',
         'participants.date'
       ])
       .leftJoinAndSelect('participants.barbecue', 'barbecue')
@@ -51,8 +51,8 @@ export class ParticipantsRepository implements AddParticipantsRepository, FindAl
         'participants.id',
         'participants.name',
         'participants.value',
-        'participants.value_suggestions_with_drink',
-        'participants.value_suggestions_with_out_drink',
+        'participants.value_suggestion_with_drink',
+        'participants.value_suggestion_with_out_drink',
         'participants.date'
       ])
       .leftJoinAndSelect('participants.barbecue', 'barbecue')
