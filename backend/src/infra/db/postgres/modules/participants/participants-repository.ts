@@ -33,8 +33,7 @@ export class ParticipantsRepository implements AddParticipantsRepository, FindAl
         'participants.name',
         'participants.value',
         'participants.value_suggestion_with_drink',
-        'participants.value_suggestion_with_out_drink',
-        'participants.date'
+        'participants.value_suggestion_with_out_drink'
       ])
       .leftJoinAndSelect('participants.barbecue', 'barbecue')
       .where('participants.account = :accountId', { accountId: accountId })
@@ -52,8 +51,7 @@ export class ParticipantsRepository implements AddParticipantsRepository, FindAl
         'participants.name',
         'participants.value',
         'participants.value_suggestion_with_drink',
-        'participants.value_suggestion_with_out_drink',
-        'participants.date'
+        'participants.value_suggestion_with_out_drink'
       ])
       .leftJoinAndSelect('participants.barbecue', 'barbecue')
       .where('participants.id = :id', { id: id })

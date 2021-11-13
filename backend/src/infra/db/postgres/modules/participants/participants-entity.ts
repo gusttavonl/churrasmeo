@@ -31,9 +31,6 @@ export class ParticipantsEntity implements ParticipantsModel {
   @Column()
   value_suggestion_with_out_drink: number
 
-  @Column()
-  date: Date
-
   @CreateDateColumn()
   created_at: Date
 
