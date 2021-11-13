@@ -9,7 +9,7 @@ import { auth } from '../middlewares'
 
 export default (router: Router): void => {
   router.post('/barbecue', auth(), adaptRoute(makeAddBarbecueController()))
-  router.get('/barbecue', auth(), adaptRoute(makeFindAllBarbecueController()))
+  router.get('/barbecue-all/:id', auth(), adaptRoute(makeFindAllBarbecueController()))
   router.get('/barbecue/:id', auth(), adaptRoute(makeFindBarbecueByIdController()))
   router.put('/barbecue/:id', auth(), adaptRoute(makeUpdateBarbecueController()))
   router.delete('/barbecue/:id', auth(), adaptRoute(makeRemoveBarbecueController()))
