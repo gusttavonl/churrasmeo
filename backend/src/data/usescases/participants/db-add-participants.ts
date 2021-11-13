@@ -14,9 +14,18 @@ export class DbAddParticipants implements AddParticipants {
   async add (participantsData: AddParticipantsParams): Promise<ParticipantsModel> {
     const barbacue = await this.findBarbecueByIdRepository.findById(participantsData.barbecue.id)
 
-    const sumValueParticipantToBarbecueValueTotal = barbacue.value + participantsData.value
+    const barbecueValue = barbacue.value
+    const participantsDataValue = participantsData.value
 
-    const barbacueUpdateObject = { value: sumValueParticipantToBarbecueValueTotal, ...barbacue }
+    let sumValueParticipantToBarbecueValueTotal: number
+
+    if (barbecueValue === null) {
+      sumValueParticipantToBarbecueValueTotal = participantsDataValue
+    } else {
+      sumValueParticipantToBarbecueValueTotal = barbecueValue + participantsDataValue
+    }
+
+    const barbacueUpdateObject = { ...barbacue, value: sumValueParticipantToBarbecueValueTotal }
 
     const participants = await this.addParticipantsRepository.add(participantsData)
 

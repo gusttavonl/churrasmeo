@@ -18,7 +18,7 @@ export class DbRemoveParticipants implements RemoveParticipants {
 
     const subtractValueParticipantToBarbecueValueTotal = barbacue.value - participant.value
 
-    const barbacueUpdateObject = { value: subtractValueParticipantToBarbecueValueTotal, ...barbacue }
+    const barbacueUpdateObject = { ...barbacue, value: subtractValueParticipantToBarbecueValueTotal }
 
     const affected = await this.removeParticipantsRepository.remove(id)
     await this.updateBarbecueRepository.update(barbacue.id, barbacueUpdateObject)
