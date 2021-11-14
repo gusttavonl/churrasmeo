@@ -1,16 +1,16 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Backend Ton",
+  "description": "Backend Churras meo",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GustavoNoronha0/ton.git"
+    "url": "git+https://github.com/GustavoNoronha0/churrasmeo.git"
   },
   "author": "Gustavo Noronha",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GustavoNoronha0/ton/issues"
+    "url": "https://github.com/GustavoNoronha0/churrasmeo/issues"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
