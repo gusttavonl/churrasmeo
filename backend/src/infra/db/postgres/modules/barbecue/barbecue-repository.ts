@@ -47,6 +47,7 @@ export class BarbecueRepository implements AddBarbecueRepository, FindAllBarbecu
       .leftJoinAndSelect('barbecue.account', 'account')
       .leftJoinAndSelect('barbecue.participants', 'participants')
       .where('barbecue.account = :accountId', { accountId: accountId })
+      .orderBy('barbecue.created_at', 'DESC')
       .getMany()
 
     return barbecue
