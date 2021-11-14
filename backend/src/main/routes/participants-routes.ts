@@ -8,7 +8,7 @@ import { auth } from '../middlewares'
 
 export default (router: Router): void => {
   router.post('/participants', auth(), adaptRoute(makeAddParticipantsController()))
-  router.get('/participants', auth(), adaptRoute(makeFindAllParticipantsController()))
+  router.get('/participants-all/:id', auth(), adaptRoute(makeFindAllParticipantsController()))
   router.get('/participants/:id', auth(), adaptRoute(makeFindParticipantsByIdController()))
   router.delete('/participants/:id', auth(), adaptRoute(makeRemoveParticipantsController()))
 }

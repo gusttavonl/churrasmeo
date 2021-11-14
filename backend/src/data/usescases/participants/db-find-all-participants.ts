@@ -7,8 +7,8 @@ export class DbFindAllParticipants implements FindAllParticipants {
     private readonly findAllParticipantsRepository: FindAllParticipantsRepository
   ) {}
 
-  async findAll (accountId): Promise<ParticipantsModel[]> {
-    const barbacues = await this.findAllParticipantsRepository.findAll(accountId)
+  async findAll (barbecueId): Promise<ParticipantsModel[]> {
+    const barbacues = await this.findAllParticipantsRepository.findAll(barbecueId)
 
     return barbacues
   }

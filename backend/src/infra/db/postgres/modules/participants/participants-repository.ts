@@ -23,7 +23,7 @@ export class ParticipantsRepository implements AddParticipantsRepository, FindAl
     return dbResponse.affected
   }
 
-  async findAll (accountId: string): Promise<ParticipantsModel[]> {
+  async findAll (barbecueId: string): Promise<ParticipantsModel[]> {
     const participantsEntity = getRepository(ParticipantsEntity)
 
     const participants = await participantsEntity
@@ -36,7 +36,7 @@ export class ParticipantsRepository implements AddParticipantsRepository, FindAl
         'participants.value_suggestion_with_out_drink'
       ])
       .leftJoinAndSelect('participants.barbecue', 'barbecue')
-      .where('participants.account = :accountId', { accountId: accountId })
+      .where('participants.barbecue = :barbecueId', { barbecueId: barbecueId })
       .getMany()
 
     return participants

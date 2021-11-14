@@ -1,5 +1,5 @@
 import { ParticipantsModel } from '@/domain/models/participants'
 
 export interface FindAllParticipantsRepository {
-  findAll: (accountId: string) => Promise<ParticipantsModel[]>
+  findAll: (barbecueId: string) => Promise<ParticipantsModel[]>
 }
