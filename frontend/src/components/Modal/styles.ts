@@ -57,7 +57,9 @@ export const Modal = styled.div`
     border-radius: ${theme.border.radius};
     display: flex;
     align-items: center;
-    min-width: 500px;
+    min-width: 60vw;
+    max-width: 80vw;
+    max-height: 90vh;
   `}
 `
 
