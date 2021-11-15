@@ -52,12 +52,11 @@ const BarbecueDetail = ({
 
         loadBarbecues()
         handleLoadParticipants()
-
-        toast.success('Participante excluído com sucesso!')
       } catch (error) {
         loadBarbecues()
         handleLoadParticipants()
       }
+      toast.success('Participante excluído com sucesso!')
     },
     [handleLoadParticipants, loadBarbecues]
   )

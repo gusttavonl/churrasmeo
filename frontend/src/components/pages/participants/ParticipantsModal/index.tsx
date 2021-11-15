@@ -53,12 +53,11 @@ const ParticipantsModal = ({
       await api.post('/participants', participants)
       loadBarbecue()
       onClose()
-
-      toast.success('Participante salvo com Sucesso')
     } catch (error) {
       loadBarbecue()
       onClose()
     }
+    toast.success('Participante salvo com Sucesso')
   }, [
     barbecueId,
     convertValueSuggestionsWithDrinkToNumber,
