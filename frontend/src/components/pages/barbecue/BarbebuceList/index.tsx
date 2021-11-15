@@ -23,13 +23,14 @@ const BarbecueList = ({ loadBarbecues, barbecues }: BarbecueListProps) => {
   }, [isModalBarbecueDetailOpen])
   return (
     <>
-      <BarbecueDetail
-        barbecue={barbecue!}
-        getValueOpen={getValueOpen}
-        isOpen={isModalBarbecueDetailOpen}
-        loadBarbecues={loadBarbecues}
-      />
-
+      {barbecue && (
+        <BarbecueDetail
+          barbecue={barbecue!}
+          getValueOpen={getValueOpen}
+          isOpen={isModalBarbecueDetailOpen}
+          loadBarbecues={loadBarbecues}
+        />
+      )}
       {barbecues.map((barbecue) => (
         <>
           <S.CardComponent
