@@ -16,6 +16,8 @@ Usando:
 #### Testes
 * Testes Unitários
 
+#### Reponsividade
+* Foi aplicada. o app se adapta para telas menores e maiores.
 ## Como executar
 
 ```bash
