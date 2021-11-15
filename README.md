@@ -19,7 +19,7 @@ Usando:
 ## Como executar
 
 ```bash
-Frontend no deploy: https://churrasmeo-theta.vercel.app/
+Frontend no deploy: https://churrasmeo-rdip48lsr-churrasmeoo.vercel.app/
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
