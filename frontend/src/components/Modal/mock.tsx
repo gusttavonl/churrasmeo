@@ -11,7 +11,6 @@ export const ModalMock: ModalProps = {
       title="Churras meo"
       countParticipants={10}
       onRemove={() => undefined}
-      value={250}
       participants={[
         {
           id: 'any_id',
