@@ -24,9 +24,6 @@ Usando:
 Frontend no deploy: https://churrasmeo-90leq5a6p-churrasmeoo.vercel.app/auth
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-
 ## Comandos
 
 - `dev`: runs your application on `localhost:3000`
@@ -45,7 +42,7 @@ O objetivo é mostrar uma API com uma arquitetura desacoplada, utilizando TDD co
 <br /><br />
 
 
-> ## APIs construídas no desafio
+> ## APIs construídas no projeto
 1. [Cadastro de uma Conta - POST] /account ( É necessário estar autenticado, para criar uma nova conta pode se logar como adminitrador, igual o exemplo da documentação do swagger )
 2. [Login - POST] /login ( Não é necessário estar autenticado )
 3. [Listagem de uma conta - GET] /account/:id - É necessário estar autenticado / :id = Id da conta
