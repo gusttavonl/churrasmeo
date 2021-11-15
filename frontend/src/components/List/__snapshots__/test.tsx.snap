@@ -192,9 +192,15 @@ exports[`<List /> should render a list default 1`] = `
   color: #d63649;
 }
 
-@media (max-width:900px) {
+@media (max-width:800px) {
   .c3 {
     width: 450px;
+  }
+}
+
+@media (max-width:600px) {
+  .c3 {
+    width: 400px;
   }
 }
 

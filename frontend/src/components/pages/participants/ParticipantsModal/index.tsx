@@ -56,7 +56,8 @@ const ParticipantsModal = ({
 
       toast.success('Participante salvo com Sucesso')
     } catch (error) {
-      toast.error('Erro ao salvar Participante')
+      loadBarbecue()
+      onClose()
     }
   }, [
     barbecueId,

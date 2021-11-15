@@ -1,7 +1,8 @@
 import * as S from './styles'
 export * from './mock'
 import React from 'react'
-import { formatData } from '@/utils/helpers'
+import { formatData, sumValues } from '@/utils/helpers'
+import { ParticipantsModel } from '@/services/models/participants'
 
 export type TypeCard = 'success' | 'error'
 
@@ -9,7 +10,7 @@ export type CardProps = {
   date: Date
   title: string
   countParticipants: number
-  value: number
+  participants: ParticipantsModel[]
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
@@ -17,9 +18,12 @@ const Card = ({
   date,
   title,
   countParticipants,
-  value,
+  participants,
   onClick
 }: CardProps) => {
+  const participantsValues = participants.map(
+    (participant) => participant.value
+  )
   return (
     <S.Wrapper>
       <S.Animate>
@@ -36,7 +40,7 @@ const Card = ({
                 </S.CountParticipants>
                 <S.Value>
                   <S.IconDollar />
-                  {value}
+                  {sumValues(participantsValues)}
                 </S.Value>
               </S.Content>
             </S.DivCard>

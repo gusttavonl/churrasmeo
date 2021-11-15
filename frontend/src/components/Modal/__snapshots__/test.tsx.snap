@@ -57,7 +57,9 @@ exports[`<Modal /> should render Modal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-width: 500px;
+  min-width: 60vw;
+  max-width: 80vw;
+  max-height: 90vh;
 }
 
 .c3 {
@@ -108,8 +110,26 @@ exports[`<Modal /> should render Modal 1`] = `
 .c8 {
   overflow: auto;
   max-height: 80vh;
-  max-width: 80vh;
+  max-width: 80vw;
   min-width: 60vw;
+}
+
+@media (max-width:800px) {
+  .c8 {
+    width: 600px;
+  }
+}
+
+@media (max-width:600px) {
+  .c8 {
+    width: 300px;
+  }
+}
+
+@media (max-width:360px) {
+  .c8 {
+    width: 450px;
+  }
 }
 
 <div

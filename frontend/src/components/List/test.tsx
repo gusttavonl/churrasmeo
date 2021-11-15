@@ -1,6 +1,6 @@
 import { render, screen } from '@/utils/tests/helpers'
 
-import List, { ListMock } from '.'
+import List from '.'
 
 describe('<List />', () => {
   const onRemove = jest.fn()
@@ -10,7 +10,24 @@ describe('<List />', () => {
         countParticipants={10}
         date={new Date()}
         title="Titulo da modal"
-        participants={ListMock.participants}
+        participants={[
+          {
+            id: 'any_id',
+            barbecue: { id: 'any_id' },
+            name: 'any_name',
+            value: 1,
+            value_suggestions_with_drink: 1,
+            value_suggestions_with_out_drink: 1
+          },
+          {
+            id: 'any_id2',
+            barbecue: { id: 'any_id' },
+            name: 'any_name',
+            value: 1,
+            value_suggestions_with_drink: 1,
+            value_suggestions_with_out_drink: 1
+          }
+        ]}
         onRemove={onRemove}
       />
     )
@@ -25,7 +42,24 @@ describe('<List />', () => {
         countParticipants={10}
         date={new Date()}
         title="Titulo da modal"
-        participants={ListMock.participants}
+        participants={[
+          {
+            id: 'any_id',
+            barbecue: { id: 'any_id' },
+            name: 'any_name',
+            value: 1,
+            value_suggestions_with_drink: 1,
+            value_suggestions_with_out_drink: 1
+          },
+          {
+            id: 'any_id2',
+            barbecue: { id: 'any_id' },
+            name: 'any_name',
+            value: 1,
+            value_suggestions_with_drink: 1,
+            value_suggestions_with_out_drink: 1
+          }
+        ]}
         onRemove={onRemove}
       />
     )

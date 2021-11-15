@@ -34,10 +34,10 @@ const BarbecueList = ({ loadBarbecues, barbecues }: BarbecueListProps) => {
       {barbecues.map((barbecue) => (
         <>
           <S.CardComponent
+            participants={barbecue.participants}
             countParticipants={barbecue.participants.length}
             title={barbecue.description}
             date={barbecue.date}
-            value={barbecue.value || 0}
             onClick={() => {
               setBarbecue(barbecue)
               setIsModalBarbecueDetailOpen(true)
