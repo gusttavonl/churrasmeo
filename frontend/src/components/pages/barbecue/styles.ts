@@ -4,11 +4,11 @@ import BarbecueList from './BarbebuceList'
 
 export const Container = styled.div`
   height: 70vh;
-  width: 100%;
+  width: 100vw;
 `
 
 export const Header = styled.div`
-  margin: 40px;
+  margin: 40px auto;
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -22,7 +22,10 @@ export const Cardies = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, 320px));
   grid-row-gap: 10px;
   justify-content: center;
-  padding: 0 10px;
+
+  @media (max-width: 600px) {
+    margin-right: 30px;
+  }
 `
 
 export const CardAddComponent = styled(CardAdd)``

@@ -52,8 +52,12 @@ export const DivList = styled.div`
     flex-direction: column;
     align-items: left;
 
-    @media (max-width: 900px) {
+    @media (max-width: 800px) {
       width: 450px;
+    }
+
+    @media (max-width: 600px) {
+      width: 400px;
     }
   `}
 `

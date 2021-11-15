@@ -101,6 +101,18 @@ export const Header = styled.div`
 export const Content = styled.div`
   overflow: auto;
   max-height: 80vh;
-  max-width: 80vh;
+  max-width: 80vw;
   min-width: 60vw;
+
+  @media (max-width: 800px) {
+    width: 600px;
+  }
+
+  @media (max-width: 600px) {
+    width: 300px;
+  }
+
+  @media (max-width: 360px) {
+    width: 450px;
+  }
 `
