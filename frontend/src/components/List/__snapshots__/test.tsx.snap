@@ -1,0 +1,365 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> should render a list default 1`] = `
+.c1 {
+  position: relative;
+  max-width: 80%;
+  width: auto;
+  margin: auto;
+}
+
+.c0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 5;
+}
+
+.c2 {
+  border-radius: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  background-color: #FAFAFA;
+  border-radius: 0.4rem;
+  padding: 2rem;
+  width: 800px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: left;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+}
+
+.c6 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  color: #030517;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.c5 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFD836;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  min-height: 100px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c9 {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #FFD836;
+}
+
+.c11 {
+  width: 100%;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c13 {
+  margin-left: 25px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  width: 70px;
+}
+
+.c16 {
+  width: 60px;
+}
+
+.c17 {
+  width: 40px;
+  cursor: pointer;
+}
+
+.c18 {
+  font-size: 25px;
+  margin-right: 5px;
+  color: #d63649;
+}
+
+@media (max-width:900px) {
+  .c3 {
+    width: 450px;
+  }
+}
+
+<div
+  class="c0"
+  data-testid="WrapperList"
+>
+  <div
+    class="c1"
+    data-testid="motion"
+    style="opacity: 0; transform: scale(0.6) translateZ(0);"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class=""
+          >
+            <h2
+              class="c5"
+            >
+              14/11/2021
+            </h2>
+            <p
+              class="c6"
+            >
+              Titulo da modal
+            </p>
+          </div>
+          <div
+            class="c7"
+          >
+            <h4
+              class="c8"
+            >
+              <svg
+                class="c9"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                />
+              </svg>
+               
+              10
+            </h4>
+          </div>
+        </div>
+        <div
+          class="c10"
+        >
+          <table
+            class="c11"
+          >
+            <div
+              class="c12"
+            >
+              <th
+                class=""
+              >
+                Nome
+              </th>
+              <th
+                class="c13"
+              >
+                Valor
+              </th>
+              <th
+                class=""
+              >
+                Excluir
+              </th>
+            </div>
+            <tr
+              class="c14"
+            >
+              <td
+                class="c15"
+              >
+                any_name
+              </td>
+              <td
+                class="c16"
+              >
+                R$ 
+                1
+              </td>
+              <td
+                class="c17"
+              >
+                <svg
+                  class="c18"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="3 6 5 6 21 6"
+                  />
+                  <path
+                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr
+              class="c14"
+            >
+              <td
+                class="c15"
+              >
+                any_name
+              </td>
+              <td
+                class="c16"
+              >
+                R$ 
+                1
+              </td>
+              <td
+                class="c17"
+              >
+                <svg
+                  class="c18"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="3 6 5 6 21 6"
+                  />
+                  <path
+                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                  />
+                </svg>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
